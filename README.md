@@ -44,6 +44,16 @@ the generalized version seemed more useful than keeping it private:
 | [content-ops-automation-templates](https://github.com/luandv92/content-ops-automation-templates) | Lead capture → email drip → UTM attribution, as small reusable Python templates. |
 | [video-prompt-formulas](https://github.com/luandv92/video-prompt-formulas) | Structural prompt formulas for AI video generation (hook timing, loopable shots, character-consistency anchors). |
 
+## Runnable agent workflow examples
+
+Start with the [agent workflow guide](docs/agent-workflows.md): a bounded
+planner/worker/reviewer example in `llm-cascade`, then an accepted-result
+monitor in `outcome-watchdog`. Both have offline fixture demos and tests.
+The guide explains the contracts between routing, review and outcome
+monitoring, and identifies the missing pieces before production deployment.
+It is an integration path through existing tools, not a new framework or
+a claim that a distributed agent network is already deployed.
+
 ## Patterns worth stealing, even if you don't use any of the tools above
 
 - **Fail-closed, not fail-open.** A QC/deploy gate that can't verify something should
