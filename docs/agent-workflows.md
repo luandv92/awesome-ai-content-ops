@@ -20,7 +20,7 @@ before any consequential action.
 
 ## Monitor accepted outcomes separately
 
-The [outcome-watchdog example](https://github.com/luandv92/outcome-watchdog/blob/main/examples/agent_outcomes.py)
+The [outcome-watchdog example](https://github.com/luandv92/outcome-watchdog/blob/master/examples/agent_outcomes.py)
 checks an accepted-result ledger rather than counting model attempts. It
 demonstrates `OK`, `NO_CHANGE` and `UNVERIFIED` with local fixtures. Run
 `python examples/agent_outcomes.py` from its checkout after `pip install -e .`.
